@@ -1,0 +1,25 @@
+main {  }
+a:hover { color: #FF6600; text decoration: underline}
+a:visited { color: #993366; text decoration: underline}
+body {  background-color: #FFFFF0}
+h1 { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 28px; color: #000066;
+margin-bottom: 0px; padding-bottom: 0px}
+h2 {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 26px; color: #000066; 
+margin-bottom: 0px; padding-bottom: 0px}
+h3 {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 18px; color: #000066}
+h4 {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; color: #000066}
+tt {  font-family: Arial, Helvetica, sans-serif; font-size: 10px; color: #000066}
+h5 {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; color: #000066}
+
+td {  font-family: Arial, Helvetica, sans-serif; font-size: 10px; color: #000066}
+p {  font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000066}
+a  {   color: #000066}
+
+.firebrick {   color: #993333}
+.lightorange {  color: #FF9900}
+.darkorange {  color: #FF3300}
+.back {  font-family: "Times New Roman", Times, serif; color: #000066}
+
+
+.bluebg {  background-color: #99cccc}
+.yellowbg {  background-color: #FFFF99}

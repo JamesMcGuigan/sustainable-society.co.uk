@@ -1,0 +1,75 @@
+<!-- InstanceBegin template="/templates/sustainable-society.xml.dwt" codeOutsideHTMLIsLocked="false" --><!-- InstanceParam name="File" type="text" value="events.htm" -->
+<!-- InstanceParam name="Layout" type="text" value="" -->
+<!-- InstanceParam name="Quote" type="boolean" value="false" -->
+<!-- InstanceParam name="Header" type="boolean" value="true" -->
+<!-- InstanceParam name="BackToTop" type="boolean" value="true" -->
+
+<!-- <?php // --> hides php tag from dreamweaver
+echo '-->'; // close comment
+ini_set(include_path,ini_get(include_path)
+ . '://home/1/s/sh/shb1_024/sustainable-society.co.uk/public_html/ssphp'
+ . '://home/1/s/sh/shb1_024/sustainable-society.co.uk/public_html/'
+ . ':/home/james/websites/sustainable-society.co.uk/ssphp'
+ . ':/home/james/websites/sustainable-society.co.uk');
+
+function dw_doctitle() {
+$title = <<<ENDOFHTML
+<!-- InstanceBeginEditable name="doctitle" --> 
+<title>Sustainable Society Directory: Events</title>
+<!-- InstanceEndEditable -->
+ENDOFHTML;
+if($title) $title = preg_replace('/<!--(.*?)-->|<title>|<\/title>/s','',$title);
+else       $title = "Sustainable Society Directory";
+
+echo "<title>$title</title>";
+}
+
+function dw_head() {
+echo <<<ENDOFHTML
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+ENDOFHTML;
+}
+
+function pagetitle() {
+echo <<<ENDOFHTML
+<!-- InstanceBeginEditable name="page-title" -->Events<!-- InstanceEndEditable -->
+ENDOFHTML;
+}
+
+function dw_quote() {
+$quote = <<<ENDOFHTML
+<!-- InstanceBeginEditable name="quote" -->
+<!-- InstanceEndEditable -->
+ENDOFHTML;
+if($quote) echo $quote.$horizontalbar;
+}
+
+function content() {
+echo <<<ENDOFHTML
+<!-- InstanceBeginEditable name="content" -->
+<table width="100%" border="0" cellspacing="0" cellpadding="10">
+              <tr> 
+                <td valign="top">
+                  <ul>
+
+										<li><a href="eventsSS.htm">Past "Creating a Sustainable Society" events</a><br><br></li>
+									        
+                    <li><a href="events2003.htm">Past Events in 2003</a><br><br></li>
+                                            
+                    <li><a href="events2002.htm">Past Events in 2002</a><br><br></li>
+                                            
+                    <li><a href="events2001.htm">Past Events in 2001</a><br></li>
+                  </ul>
+           </td>
+        </tr>
+      </table>
+	  
+
+      <!-- InstanceEndEditable -->
+ENDOFHTML;
+}
+
+include_once('templates/sustainable-society.xml.php');
+
+?><!-- InstanceEnd -->

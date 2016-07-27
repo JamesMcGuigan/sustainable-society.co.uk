@@ -1,0 +1,55 @@
+BODY {
+background: Ivory;
+
+}
+
+H1  
+{
+color: FireBrick;
+font-size: 20px; 
+font-family: Verdana, Arial, Helvetica, sans-serif; 
+}
+
+H2  
+{
+color: MidnightBlue;
+font-size: 18px; 
+font-family: Verdana, Arial, Helvetica, sans-serif;
+} 
+
+
+
+H3  
+{
+color: MidnightBlue;
+font-size: 10px; 
+font-family: Verdana, Arial, Helvetica, sans-serif; 
+}
+
+H3.names 
+{
+
+font-family: comic sans ms; 
+}
+
+H3.back
+{
+font-size: 12px; 
+font-family: times new roman;
+}
+
+H4  
+{
+color: FireBrick;	
+font-size: 12px; 
+font-family: Verdana, Arial, Helvetica, sans-serif; 
+}
+
+H4.list
+{
+color: OrangeRed;
+}
+
+
+
+

@@ -1,0 +1,113 @@
+BODY {
+background: #FFFFCC;
+}
+
+H1  
+{
+color: FireBrick;
+font-size: 22px; 
+font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+H1.titles
+{
+color: DarkOrange;
+}
+
+
+H2  
+{
+color: FireBrick;
+font-size: 18px; 
+font-family: Verdana, Arial, Helvetica, sans-serif;
+} 
+
+H2.eve
+{
+color: DarkOrange;
+}
+
+H2.titles
+{
+color: OrangeRed;
+}
+
+H3  
+{
+color: MidnightBlue;
+font-size: 12px; 
+font-family: Verdana, Arial, Helvetica, sans-serif; 
+}
+
+H3.comment {
+margin-left: 40px;
+margin-right: 40px;
+margin-top: 5xp;
+font-size: 12px;
+}
+
+H3.title 
+{
+font-size: 16px;
+ 
+}
+
+H3.names 
+{
+font-size: 10px;
+ 
+}
+
+H3.heading1 
+{
+color: DarkOrange;
+ 
+}
+
+H3.heading2 
+{
+color: OrangeRed;
+ 
+}
+
+
+H3.heading3 
+{
+color: FireBrick;
+ 
+}
+
+
+H3.back 
+{
+
+color: MidnightBlue; 
+font-family: times new roman;
+}
+
+
+H4  
+{
+color: MidnightBlue;
+font-size: 12px; 
+font-family: times new roman; 
+}
+
+
+TT  
+{
+color: MidnightBlue;
+font-size: 12px; 
+font-family: Verdana, Arial, Helvetica, sans-serif; 
+}
+
+H5 
+{
+color: MidnightBlue;
+font-size: 10px; 
+font-family: Verdana, Arial, Helvetica, sans-serif; 
+
+}
+
+
+

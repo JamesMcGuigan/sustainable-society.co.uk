@@ -1,0 +1,113 @@
+body {
+
+}
+
+h1 {
+	font-size: 36px;
+	font-weight: bolder;
+	color: ff7b00;
+}
+
+h2 {
+	font-size: 30px;
+	font-weight: bolder;
+	color: ff7b00;
+}
+
+a {
+	font-weight: bold;
+	color: #e68300;
+	text-decoration: underline;
+}
+
+a:visited {
+	font-weight: bold;
+	color: #e6962d;
+	text-decoration: underline;
+}
+
+a:hover {
+	font-weight: bold;
+	color: #7f4800;
+	text-decoration: underline;
+}
+
+a.menu {
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+
+a.menu:visited {
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+
+a.menu:hover {
+	font-weight: bold;
+	color: #7f4800;
+	text-decoration: underline;
+}
+
+.menu {
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+.speakers {
+	font-weight: bold;
+	color: ff7b00;
+}
+
+.names {
+	font-weight: bold;
+	color: ff7b00;
+}
+
+.black-bold {
+	font-weight: bolder;
+	color: #7f4800;
+}
+
+a.sidebar {
+	font-weight: bold;
+	color: #e68300;
+	text-decoration: underline;
+}
+
+a.sidebar:visited {
+	font-weight: bold;
+	color: #e6962d;
+	text-decoration: underline;
+}
+
+a.sidebar:hover {
+	font-weight: bold;
+	color: #7f4800;
+	text-decoration: underline;
+}
+
+a.sidebar:active{
+	font-weight: bold;
+	color: #8200e6;
+}
+
+.sidebar-selected {
+	font-weight: bold;
+	color: #8200e6;
+}
+
+.firebrick {
+  color:#cc6200;
+  font-weight: bold;
+}
+
+.darkorange {
+	color:#cc6200;
+  font-weight: bold;	
+}
+.justify {
+	background-position: center;
+	text-align: justify;
+}

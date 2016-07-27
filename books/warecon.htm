@@ -1,0 +1,65 @@
+<!-- InstanceBegin template="/templates/sustainable-society.xml.dwt" codeOutsideHTMLIsLocked="false" --><!-- InstanceParam name="File" type="text" value="" -->
+<!-- InstanceParam name="Layout" type="text" value="" -->
+<!-- InstanceParam name="Quote" type="boolean" value="false" -->
+<!-- InstanceParam name="Header" type="boolean" value="false" -->
+<!-- InstanceParam name="BackToTop" type="boolean" value="true" -->
+
+<!-- <?php // --> hides php tag from dreamweaver
+echo '-->'; // close comment
+ini_set(include_path,ini_get(include_path)
+ . '://home/1/s/sh/shb1_024/sustainable-society.co.uk/public_html/ssphp'
+ . '://home/1/s/sh/shb1_024/sustainable-society.co.uk/public_html/'
+ . ':/home/james/websites/sustainable-society.co.uk/ssphp'
+ . ':/home/james/websites/sustainable-society.co.uk');
+
+function dw_doctitle() {
+$title = <<<ENDOFHTML
+<!-- InstanceBeginEditable name="doctitle" --> 
+<TITLE>Andrew Simms</TITLE>
+
+<!-- InstanceEndEditable -->
+ENDOFHTML;
+if($title) $title = preg_replace('/<!--(.*?)-->|<title>|<\/title>/s','',$title);
+else       $title = "Sustainable Society Directory";
+
+echo "<title>$title</title>";
+}
+
+function dw_head() {
+echo <<<ENDOFHTML
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+ENDOFHTML;
+}
+
+function pagetitle() {
+echo <<<ENDOFHTML
+<!-- InstanceBeginEditable name="page-title" -->
+<!-- InstanceEndEditable -->
+ENDOFHTML;
+}
+
+function dw_quote() {
+$quote = <<<ENDOFHTML
+<!-- InstanceBeginEditable name="quote" -->
+<!-- InstanceEndEditable -->
+ENDOFHTML;
+if($quote) echo $quote.$horizontalbar;
+}
+
+function content() {
+echo <<<ENDOFHTML
+<!-- InstanceBeginEditable name="content" -->
+
+Andrew Simms
+
+Climate change threatens over the next century to overwhelm the planet's life-support system yet we have failed to respond to its challenge.  On the one hand, the rich countries of the norh, the United States in particular, live lifestyles heavily dependent on the fossil fuels that cause global warming - but their politicians fight shy of change.  On the other, the poorer people of the South bear a much smaller responsibility for climate change but will suffer far more from its effects.  It is a dangerously divided world - a world "turned upside down", says Andrew Simms in this latest NEF Pocketbook - but there is a way forward.  The wartime experience of living "lightly" on the earth - reducing waste and conserving resources in the face of a common enemy - shows that modern mass democracies are capable of meeting such a life-threatening emergency.  By building on this experience, the rich world can not only tackle the new enemy - a hostile climate - but start to pay off its environmental "debt" to the planet.
+
+
+<!-- InstanceEndEditable -->
+ENDOFHTML;
+}
+
+include_once('templates/sustainable-society.xml.php');
+
+?><!-- InstanceEnd -->

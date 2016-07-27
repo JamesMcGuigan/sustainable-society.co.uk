@@ -1,0 +1,57 @@
+<!-- TemplateParam name="File" type="text" value="" -->
+<!-- TemplateParam name="Layout" type="text" value="" -->
+<!-- TemplateParam name="Quote" type="boolean" value="true" -->
+<!-- TemplateParam name="Header" type="boolean" value="true" -->
+<!-- TemplateParam name="BackToTop" type="boolean" value="true" -->
+
+<!-- <?php // --> hides php tag from dreamweaver
+echo '-->'; // close comment
+ini_set(include_path,ini_get(include_path)
+ . '://home/1/s/sh/shb1_024/sustainable-society.co.uk/public_html/ssphp'
+ . '://home/1/s/sh/shb1_024/sustainable-society.co.uk/public_html/'
+ . ':/home/james/websites/sustainable-society.co.uk/ssphp'
+ . ':/home/james/websites/sustainable-society.co.uk');
+
+function dw_doctitle() {
+$title = <<<ENDOFHTML
+<!-- TemplateBeginEditable name="doctitle" -->
+<!-- TemplateEndEditable -->
+ENDOFHTML;
+if($title) $title = preg_replace('/<!--(.*?)-->|<title>|<\/title>/s','',$title);
+else       $title = "Sustainable Society Directory";
+
+echo "<title>$title</title>";
+}
+
+function dw_head() {
+echo <<<ENDOFHTML
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+ENDOFHTML;
+}
+
+function pagetitle() {
+echo <<<ENDOFHTML
+<!-- TemplateBeginEditable name="page-title" -->
+<!-- TemplateEndEditable -->
+ENDOFHTML;
+}
+
+function dw_quote() {
+$quote = <<<ENDOFHTML
+<!-- TemplateBeginEditable name="quote" -->
+<!-- TemplateEndEditable -->
+ENDOFHTML;
+if($quote) echo $quote.$horizontalbar;
+}
+
+function content() {
+echo <<<ENDOFHTML
+<!-- TemplateBeginEditable name="content" -->
+<!-- TemplateEndEditable -->
+ENDOFHTML;
+}
+
+include_once('templates/sustainable-society.xml.php');
+
+?>

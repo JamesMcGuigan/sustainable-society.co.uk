@@ -1,0 +1,91 @@
+<!-- InstanceBegin template="/templates/sustainable-society.xml.dwt" codeOutsideHTMLIsLocked="false" --><!-- InstanceParam name="File" type="text" value="" -->
+<!-- InstanceParam name="Layout" type="text" value="" -->
+<!-- InstanceParam name="Quote" type="boolean" value="false" -->
+<!-- InstanceParam name="Header" type="boolean" value="false" -->
+<!-- InstanceParam name="BackToTop" type="boolean" value="true" -->
+
+<!-- <?php // --> hides php tag from dreamweaver
+echo '-->'; // close comment
+ini_set(include_path,ini_get(include_path)
+ . '://home/1/s/sh/shb1_024/sustainable-society.co.uk/public_html/ssphp'
+ . '://home/1/s/sh/shb1_024/sustainable-society.co.uk/public_html/'
+ . ':/home/james/websites/sustainable-society.co.uk/ssphp'
+ . ':/home/james/websites/sustainable-society.co.uk');
+
+function dw_doctitle() {
+$title = <<<ENDOFHTML
+<!-- InstanceBeginEditable name="doctitle" --> 
+<TITLE>Short Circuit</TITLE>
+
+<!-- InstanceEndEditable -->
+ENDOFHTML;
+if($title) $title = preg_replace('/<!--(.*?)-->|<title>|<\/title>/s','',$title);
+else       $title = "Sustainable Society Directory";
+
+echo "<title>$title</title>";
+}
+
+function dw_head() {
+echo <<<ENDOFHTML
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+ENDOFHTML;
+}
+
+function pagetitle() {
+echo <<<ENDOFHTML
+<!-- InstanceBeginEditable name="page-title" -->
+<!-- InstanceEndEditable -->
+ENDOFHTML;
+}
+
+function dw_quote() {
+$quote = <<<ENDOFHTML
+<!-- InstanceBeginEditable name="quote" -->
+<!-- InstanceEndEditable -->
+ENDOFHTML;
+if($quote) echo $quote.$horizontalbar;
+}
+
+function content() {
+echo <<<ENDOFHTML
+<!-- InstanceBeginEditable name="content" -->
+
+<TABLE WIDTH=100% BORDER=0 CELLPADDING=20 CELLSPACING=0>
+<TR>
+
+	<TD>
+
+
+<I>Short Circuit</I> details the financial structures necessary for self-reliance, it describes the techniques already in use in pioneering communities across the industrialised world,  reviews efforts to meet local food and energy requirements using local resources.  Blending sophisticated analysis with practical guidance, Short Circuit opens up a wide range of possible futures and demonstrates sources of empowerment and cultural identity beyond conventional politics and economics.
+
+
+	</TD>
+
+</TR>
+</TABLE>
+
+<TABLE WIDTH=100% BORDER=0 CELLPADDING=20 CELLSPACING=0>
+<TR>
+
+	<TD>
+
+	<H3 class="names">
+	<SPAN STYLE="color: #990000"> Douthwaite, Richard:</SPAN>
+  	 'Short Circuit'<BR>
+	Green Books, 1996.<BR> 
+	ISBN 1-870098-64-1
+	</H3><BR><P>
+	</TD>
+
+</TR>
+</TABLE>
+
+
+<!-- InstanceEndEditable -->
+ENDOFHTML;
+}
+
+include_once('templates/sustainable-society.xml.php');
+
+?><!-- InstanceEnd -->

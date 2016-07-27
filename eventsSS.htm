@@ -1,0 +1,163 @@
+<!-- InstanceBegin template="/templates/sustainable-society.xml.dwt" codeOutsideHTMLIsLocked="false" --><!-- InstanceParam name="File" type="text" value="" -->
+<!-- InstanceParam name="Layout" type="text" value="" -->
+<!-- InstanceParam name="Quote" type="boolean" value="true" -->
+<!-- InstanceParam name="Header" type="boolean" value="true" -->
+<!-- InstanceParam name="BackToTop" type="boolean" value="true" -->
+
+<!-- <?php // --> hides php tag from dreamweaver
+echo '-->'; // close comment
+ini_set(include_path,ini_get(include_path)
+ . '://home/1/s/sh/shb1_024/sustainable-society.co.uk/public_html/ssphp'
+ . '://home/1/s/sh/shb1_024/sustainable-society.co.uk/public_html/'
+ . ':/home/james/websites/sustainable-society.co.uk/ssphp'
+ . ':/home/james/websites/sustainable-society.co.uk');
+
+function dw_doctitle() {
+$title = <<<ENDOFHTML
+<!-- InstanceBeginEditable name="doctitle" -->
+<!-- uncomment to override the default title -->
+<!-- <title>Sustainable Society Directory</title> -->
+<!-- InstanceEndEditable -->
+ENDOFHTML;
+if($title) $title = preg_replace('/<!--(.*?)-->|<title>|<\/title>/s','',$title);
+else       $title = "Sustainable Society Directory";
+
+echo "<title>$title</title>";
+}
+
+function dw_head() {
+echo <<<ENDOFHTML
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+ENDOFHTML;
+}
+
+function pagetitle() {
+echo <<<ENDOFHTML
+<!-- InstanceBeginEditable name="page-title" --><span class="firebrick">&quot;Creating a Sustainable Society&quot; - Reports </span><!-- InstanceEndEditable -->
+ENDOFHTML;
+}
+
+function dw_quote() {
+$quote = <<<ENDOFHTML
+<!-- InstanceBeginEditable name="quote" -->
+                  <div align="left">"Creating a Sustainable Society" was a series of monthly events that took place between March 2002 and May 2003. The aim was to create a synergy among people and organizations working towards a better society but in different fields. Each event had a different theme, such as "Empires of the 21st Century", "Rebuilding Local Economies - From Theory to Practice" and "Monetary Reform, Economic Justice and Political Democracy" and they where presented by a host of distinguished speakers including, Helena Norbert-Hodge, Teresa Hale, Ann Pettifor, James Robertson and Ian Mason.                  </div>
+                <!-- InstanceEndEditable -->
+ENDOFHTML;
+if($quote) echo $quote.$horizontalbar;
+}
+
+// Returns a nicely formatted filesize from a number of bytes
+
+function getfilesize($filename) {
+   $bytes = filesize($filename);
+   $degree = 1;
+
+   if($bytes >= (1024 * 1024 * 1024 * 1024)) {
+    $return = round(($bytes / (1024 * 1024 * 1024 * 1024)), $degree);
+    $suffix = 'tb';
+   }
+   elseif($bytes >= (1024 * 1024 * 1024)) {
+    $return = round(($bytes / (1024 * 1024 * 1024)), $degree);
+    $suffix = 'gb';
+   }
+   elseif($bytes >= (1024 * 1024)) {
+    $return = round(($bytes / (1024 * 1024)), $degree);
+    $suffix = 'mb';
+   }
+   elseif($bytes >= (1024)) {
+    $return = round(($bytes / (1024)), $degree);
+    $suffix = 'kb';
+   }
+   else {
+    $return = round(($bytes / (1024 * 1024 * 1024)), $degree);
+    $suffix = 'byte';
+   }
+
+   if(true || $return == 1) {
+    $return = $return . $suffix;
+   } else {
+    $return = $return . $suffix . 's';
+   }
+  return $return;
+}
+
+function mp3_stream_list($array, $zipfile=null, $zip_pattern=null) {
+  $audio_dir = 'audio';
+  if(!is_array($array) || count($array) == 0 ) return;
+
+  echo "<ul>";
+  foreach($array as $link => $title) {
+    echo "<li><a title='MP3 Audio Stream' href='$audio_dir/mp3stream.php?".urlencode($link)."'>";
+    echo "Audio Stream of " . $title . "</a>";
+    echo " or <a title='MP3 Download' href='$audio_dir/$link'> Download</a>";
+    echo " [". getfilesize("$audio_dir/$link") ." mp3]</li>";
+  }
+  if($zipfile && $zip_pattern) {
+    echo "<li>";
+    if($zip_pattern) echo "<a title='MP3 Audio Stream' href='$audio_dir/mp3stream.php?playlist=$zip_pattern'>Stream All</a> or ";
+    if($zipfile)     echo "<a title='Download Zipped MP3 Files' href='$audio_dir/$zipfile'>Download All</a>"
+                        . " [". getfilesize("$audio_dir/$link") ." zip] </li>";
+  }
+  echo "</ul>";
+  echo "<br/>";
+  echo "<br/>";  
+}
+
+function content() {
+$CSS3 = array(
+  'CSS-3-1_Intro_Ann_Pettifor.mp3' => 'the Introdunction by Ann Pettifor',
+  'CSS-3-2_Derek_Osborn.mp3'       => 'Derek Osborn\'s Speach',
+  'CSS-3-3_Jakob_Von_Uexkull.mp3'  => 'Jakob Von Uexkull\'s Speach',
+  'CSS-3-4_Heikki_Patomaki.mp3'    => 'Heikki Patomaki\'s Speach',
+  'CSS-3-5_John_Jopling.mp3'       => 'John Jopling\'s Speach',
+  'CSS-3-6_Questions.mp3'          => 'the Questions',
+);
+
+$CSS7 = array(
+  'CSS-7-1_Introduction.mp3' => 'the Introduction',
+  'CSS-7-2_Andrew_Simms.mp3' => 'Andrew Simms\'s Speach',
+  'CSS-7-3_Colin_Hines.mp3'  => 'Colin Hines\'s Speach',
+  'CSS-7-4_Michael_Hart.mp3' => 'Michael Hart\'s Speach',
+  'CSS-7-5_Questions.mp3'    => 'the Questions',
+);
+
+echo <<<ENDOFHTML
+<!-- InstanceBeginEditable name="content" -->
+
+            <UL>
+             <li><a href="events/may7-rep.htm">Monetary Reform, Economic Justice and Political Democracy</a> (7th May 2003)</li>
+                 <ul><li><a href="events/robertson_notes.htm">James Robertson's Speaking Notes</a><br><br></li></ul>
+             <li><A href="events/rep-health.htm">Health and Sustainability - A Question of Economic, Environmental and Social Justice</a> (30th April 2003)<br><br></li>
+
+
+             <li><A href="events/rep-global.htm">The Future of Global Governance</a> (19th March 2003)</li>
+ENDOFHTML;
+
+mp3_stream_list($CSS3, 'CSS-3-Local_Economies_in_a_Globalised_World.zip','CSS-3');
+
+echo <<<ENDOFHTML
+
+             <li><A href="events/rep-rebuild.htm">Rebuilding Local Economies - From Theory to Practice</a> (3rd March 2003)<br><br></li>
+             <li><A href="events/rep-empires.htm">Empires of the 21st Century</a> (10th February 2003)</li>
+                 <ul><li><a href="events/serge_halimi.htm">Media Empires by Serge Halimi</a><br>
+                   <br></li></ul>
+              <LI><A HREF="events/july-rep.htm">Creating a Tide of Hope - Towards the Johannesburg Summit</A> (22nd July 2002)<br><br></li>
+
+
+              <LI><A HREF="events/jun-rep.htm">Local Economies in a Globalised World</A> (24th June 2002)</li>
+ENDOFHTML;
+
+mp3_stream_list($CSS7, 'CSS-7-The_Future_of_Global_Governance.zip','CSS-7');
+
+echo <<<ENDOFHTML
+              <LI><A HREF="events/may-rep.htm">Reforming the Global Economic System</A> (20th May 2002)<br><br></li>
+              <LI><A HREF="events/apr-rep.htm">Healthy & Wealthy Cities</A> (29th April 2002)<br><br></li>
+            </UL>
+            <!-- InstanceEndEditable -->
+ENDOFHTML;
+}
+
+include_once('templates/sustainable-society.xml.php');
+
+?><!-- InstanceEnd -->
